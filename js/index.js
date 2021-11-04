@@ -6,7 +6,7 @@ canvas.height=window.innerHeight
 
 //background img
 let background = new Image()
-  background.src = '/images/road.png'
+  background.src = 'images/road.png'
 
   //music
   var mySound;
@@ -14,7 +14,7 @@ let background = new Image()
 //necessary
 const ctx = canvas.getContext("2d")
 var audio = document.getElementById("lifeinthefastlane");
-  audio.volume=0.3;
+  audio.volume=0.2;
 //load background
 background.onload=function(){
 ctx.drawImage(background,0,0,canvas.width,canvas.height);
@@ -30,7 +30,7 @@ let vehicle = {
 
 // car image, replaces vehicle with car img
 var car = new Image()
-  car.src = '/images/car.png';
+  car.src = 'images/car.png';
   car.onload = () => {
   ctx.drawImage(car, 0, 0,66,100)
   }
